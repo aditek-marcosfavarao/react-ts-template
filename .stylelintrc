@@ -1,0 +1,39 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "customSyntax": "postcss-styled-syntax",
+  "rules": {
+    "declaration-empty-line-before": null,
+    "max-nesting-depth": [
+      3,
+      {
+        "ignore": ["blockless-at-rules"]
+      }
+    ],
+    "color-named": "never",
+    "declaration-no-important": true,
+    "selector-max-id": 0,
+    "selector-max-class": 3,
+    "selector-class-pattern": [
+      "^[a-z]+[a-zA-Z0-9]*$",
+      {
+        "message": "Class name must be in camelCase (start with a lowercase letter, no dashes or underscores)."
+      }
+    ],
+    "shorthand-property-no-redundant-values": true,
+    "function-no-unknown": null,
+    "value-keyword-case": null,
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": ["/^\\$.*$/"]
+      }
+    ],
+    "declaration-property-unit-allowed-list": {
+      "font-size": ["px", "rem", "%"],
+      "line-height": ["px", "rem", "%"]
+    },
+    "no-empty-source": true,
+    "length-zero-no-unit": true,
+    "block-no-empty": true
+  }
+}
