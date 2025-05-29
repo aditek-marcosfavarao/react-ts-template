@@ -19,8 +19,8 @@ export const GlobalStyle = createGlobalStyle`
 	}
 
 	body {
-		background-color: black;
-		color: white;
+		background-color: white;
+		color: black;
 		-webkit-font-smoothing: antialiased;
 	}
 

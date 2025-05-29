@@ -1,13 +1,10 @@
 import { Outlet } from 'react-router-dom';
-
-function Blank() {
-	return <></>;
-}
+import { Header } from './Header';
 
 export function DefaultLayout() {
 	return (
 		<>
-			<Blank />
+			<Header />
 			<Outlet />
 		</>
 	);
